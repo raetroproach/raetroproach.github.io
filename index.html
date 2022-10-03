@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-sm navbar-dark container-fluid bg-secondary">
+    <div class="container">
+      <a href="javascript:void(0) class="navbar-brand">
+        <img src="/images/logo.png" alt="Logo" style="height:80px; width:240px;">
+      </a>
+      <button type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar" class="navbar-toggler">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse justify-content-end lead" id="mynavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+             <a href="javascript:void(0)" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+             <a href="javascript:void(0)" class="nav-link">Research</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link" data-bs-toggle="modal">About</a>
+              <div class="modal fade" id="about">
+                <div class="modal-dialog modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title">About</h4>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                      <img src="/images/about.jpg" class="rounded mx-auto d-block" alt="Photo">
+                      <p><strong>Curiosity is one of the traits I consider to be a blessing. It pushes me to continuously improve myself by learning different 
+                        skills to answer scientific questions that lay bare in front of me. The very reason why I studied Electrical Engineering as a 
+                        foundation to understand scientific concepts through experimentations. But there are simply still too many questions that need 
+                        to be answered, and so, this website will attempt to introduce alternative explanations and interpretations outside of what is 
+                        otherwise presented by academia.</strong></p>
+                      <p class="lead"><strong><i>“Educationally fun journey of discovery”</i></strong></p>
+                      <p><strong>This website will be used to document experiments thereby consequently delving into hobby inventor topics such as
+                        <ul>
+                          <li>Electronics</li>
+                          <li>Microcontroller Programming</li>
+                          <li>GUI Development</li>
+                          <li>3d Printing</li>
+                        </ul>
+                        <br>
+                        and more. The test gears that are used in the experiments will be broken down into their core components and enumerated 
+                        accordingly. May this website serve as a reference for other curious minds like me, who persevere to unravel the mysteries 
+                        of nature independent of academia. Join me in this adventure of rediscovery and reinterpretation.</strong></p>
+                      <p><strong><i>“Heartfelt gratitude and admiration to all the past and present scientists that push the boundary of science”</i></strong></p>
+                      <p><strong>The technology that we all enjoy today, we owe it all to all the great minds in the past that made it all possible even 
+                        if they knew that the fruition of all their hard work won't benefit them in their lifetime. We owe it all to them to continue their 
+                        work for future generations to come so that they in turn can further explore the seemingly endless frontiers of knowledge.</strong></p>
+                      <p><strong><i>“Remembering Phlogiston”</i></strong></p>
+                      <p><strong>Phlogiston theory was a scientifically accepted mainstream theory that explained the combustion phenomena until proven 
+                        otherwise after roughly a century of experimentations. It is only after the discovery of oxygen that the Phlogiston theory was 
+                        abandoned in favor of the now mainstream theory of oxidation and reduction.</strong></p>
+                      <p><strong>Heavier objects were believed to fall faster than lighter objects for well over a millennium. It is not only until the 
+                        rigorous experimentations of Galileo that proved that all objects, not taking into account air resistance, fall at the same rate 
+                        regardless of weight.</strong></p>
+                      <p><strong>These are just examples of scientific concepts evolving as a result of actual experimentations rather than just thought 
+                        experiments. Scientific stagnation because of dogmatism must never stand in the way of any scientist for the evolution of science 
+                        to take place.</strong></p>
+                      <p><strong><i>“Classical experiments with a modern twist”</i></strong></p>
+                      <p><strong>One of the goals of this website is to revisit old classical concepts with modern experiments and methods not available 
+                        before and therefore introduce new explanations and concepts that have been missed. Occam's Razor approach will be used to minimize 
+                        the abstraction layers that may be required to describe a phenomenon. The simpler and more logical the explanation is, the better. </strong></p>
+                      <p><strong>With proper experimentation, nature's secrets will reveal themselves as if there are no secrets at all. The beauty of 
+                        science lies in its simplicity.</strong></p>
+                    </div>
+                  </div>  
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="#impressum" class="nav-link" data-bs-toggle="modal">Impressum</a>
+              <div class="modal fade" id="impressum">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="modal-title">Impressum</h4>
+                    </div>
+                    <div class="modal-body">
+                      <strong>
+                      Angelito Aquino<br>
+                      Krumme Straße 6<br>
+                      73230 Kirchheim unter Teck<br>
+                      <br>
+                      Tel: +49 70219317251<br>
+                      Email: raetroproach@gmail.com
+                      </strong>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+              
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+    </div>
+  </nav>
+
+  <div class="container-sm mt-3">
+    <h2 class="text-center">A Classical Approach in Determining the Relationship between Electromagnetism and Gravity</h2>
+  </div>
+  <div id="accordion" class="container-sm mt-3">
+    <div class="card">
+      <div class="card-header text-center d-grid">
+        <a class="btn" data-bs-toggle="collapse" href="#abstract"><h5>Abstract</h5></a>
+      </div>
+      <div id="abstract" class="collapse show" data-bs-parent="#accordion">
+        <div class="card-body">
+          <p>A qualitative relationship linking electromagnetism and gravity has eluded humanity for the longest time to the extent 
+            that both are treated as unrelated fundamental forces in the universe. A simple but effective experiment that involves using 
+            a free-falling magnet inside a copper pipe shows that the velocity of the falling magnet is constant. Taking into consideration 
+            the separation of weight and gravitational force, the force that is keeping the magnet from accelerating is therefore always 
+            equal to the induced Lenz force generated by the changing magnetic flux in the copper pipe. In this scenario, the necessitated 
+            acceleration of the magnet to a constant velocity will induce a force that is equal to the gravitational force.</p>
+        </div>        
+      </div>
+    <div class="card">
+      <div class="card-header text-center d-grid">
+        <a class="btn" data-bs-toggle="collapse" href="#introduction"><h5>Introduction</h5></a>
+      </div>
+      <div id="introduction" class="collapse" data-bs-parent="#accordion">
+        <div class="card-body">
+          <p>In the late 300 BC Greece, Aristotle attempted to explain the nature of gravity. He believed that objects moved toward their 
+            "natural place". It was also believed that heavier objects fall faster than lighter objects. It was only between 1589-1592 when 
+            Galileo proved that all objects fall at the same rate of acceleration independent of their weight. This paved the way for 
+            Sir Isaac Newton's law of universal gravitation which subsequently led to Albert Einstein's curvature of space-time theory 
+            which is the basis of the mainstream theory of gravity in physics to this day.</p>
+          <p>In the early 1800s, electricity, and magnetism were considered two unrelated forces independent of each other until the first 
+            official publication of Hans Christian Oersted which linked the two. Consequently, this further led to Michael Faraday's discovery 
+            of electromagnetic induction and the production of electromotive force (i.e., voltage). The technology that arose from these 
+            discoveries was efficiently implemented by Nikola Tesla with his invention of the AC motor/generator and its subsequent systems 
+            which are still widely used today.</p>
+          <p>Nowadays, we consider electromagnetism and gravity as two separate forces independent of each other. Although there are a lot of 
+            similarities between them there is not enough distinct relationship to link them. This research paper aims to show, through a simple 
+            experiment, the relationship between electromotive force and gravitational force. The results of this experiment will optimistically 
+            serve as a reference for further research and as a basis for future technologies that may spark a revolution in, but not limited to, 
+            energy generation and transportation.</p>
+        </div>        
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header text-center d-grid">
+        <a class="btn" data-bs-toggle="collapse" href="#methods"><h5>Methods</h5></a>
+      </div>
+      <div id="methods" class="collapse" data-bs-parent="#accordion">
+        <div class="card-body">
+          <p>The goal of the experiment was to measure the change in velocities of a free-falling magnet inside a vertically oriented copper pipe. 
+            Since a wire loop with both ends connected exhibits the same phenomena as that of a copper pipe, the latter is used for a more uniform 
+            build. The change in positions of the free-falling magnet inside the copper pipe was detected by three equally spaced, vertically 
+            arranged optical transmitters/receivers, which were connected to a microcontroller as sensors. The three optical sensors were mounted 
+            parallel to the copper pipe at a sufficient distance. Holes of very minute diameter were drilled through the copper pipe for the 
+            optical sensors to complete a light circuit (refer to <a href="#figure1"><strong>Figure 1</strong></a>). Two methods were used to 
+            measure the change in velocities of the free-falling magnet.</p>
+          <p>The first method was to manually start and stop two stopwatches every time the magnet broke a light circuit. The optical sensors 
+            provided visual confirmation, with inactivation of a built-in light emitting diode, every time the magnet broke a light circuit. 
+            As the magnet passed through the copper pipe and broke the top light circuit, the first stopwatch was started. As the magnet broke 
+            the middle light circuit, the second stopwatch was started while the first stopwatch was stopped. Lastly, as the magnet broke the 
+            bottom light circuit, the second stopwatch was stopped (refer to <a href="#table1"><strong>Table 1</strong></a> for results). </p>
+          <p>The second method was fully automated. A liquid crystal display was connected to the microcontroller to show the results of the 
+            built-in timer/counter of the microcontroller itself. The only action the experimenter had to do was to release the magnet on the 
+            top end of the copper pipe. As the magnet passed through the copper pipe and broke the top light circuit, the first timer/counter 
+            was started. As the magnet broke the middle light circuit, the second timer/counter was started while the first timer/counter was 
+            stopped. Lastly, as the magnet broke the bottom light circuit, the second timer/counter was stopped (refer to 
+            <a href="#table2"><strong>Table 2</strong></a> for results).</p>
+          <div id="figure1" class="text-center">
+            <figure class= "figure">
+              <img src="images/speedometer.svg" class="img-fluid" alt="Speedometer">
+              <figcaption class="figure-caption text-center">Figure 1</figcaption>
+            </figure>
+          </div>
+          <p><strong>Figure 1.</strong> Speedometer build for gravitation</p>
+            <ol class="list-inline list-inline-numbered" type="a">
+              <li class="list-inline-item me-4">(<strong>a</strong>) N42 spherical neodymium magnet with a diameter of 12mm</li>
+              <li class="list-inline-item me-4">(<strong>b</strong>) Copper pipe with an inner diameter of 13mm, an outer diameter of 15mm, and a length of 1m</li>
+              <li class="list-inline-item me-4">(<strong>c</strong>) LDR5528 Photoresistor light sensor module</li>
+              <li class="list-inline-item me-4">(<strong>d</strong>) Light emitted by a laser</li>
+              <li class="list-inline-item me-4">(<strong>e</strong>) 2mm diameter hole through the copper pipe where light can pass through, 25cm apart</li>
+              <li class="list-inline-item me-4">(<strong>f</strong>) 650nm laser transmitter module</li>
+              <li class="list-inline-item me-4">(<strong>g</strong>) Rubber bands for copper pipe stabilization</li>
+              <li class="list-inline-item me-4">(<strong>h</strong>) Arduino Uno development board with LCD1602 LCD and keypad shield</li>
+            </ol>
+          <p>All electronic components including wires and magnetically sensitive materials are distanced at least 25cm away from the copper pipe.</p>
+        </div>        
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header text-center d-grid">
+        <a class="btn" data-bs-toggle="collapse" href="#results"><h5>Results</h5></a>
+      </div>
+      <div id="results" class="collapse" data-bs-parent="#accordion">
+        <div class="card-body">
+          <p>Variable Definitions</p>
+          <p>\(t_1\) is the time it took for the spherical magnet to travel from the top light circuit to the middle light circuit which is 25cm apart.</p>
+          <p>\(t_2\) is the time it took for the spherical magnet to travel from the middle light circuit to the bottom light circuit which is also 25cm apart.</p>
+          <p>\(V_1\) is the first spherical magnet velocity,</p>
+          <p>\[V_1 = \frac{25cm}{t1}\]</p>
+          <p>\(V_2\) is the first spherical magnet velocity,</p>
+          <p>\[V_2 = \frac{25cm}{t2}\]</p>
+          <p>\(a\) is the computed acceleration,</p>
+          <p>\[a = \frac{V_2 - V_1}{t_2}\]</p>
+          <p><strong>Table 1.</strong> Manual method of measurement</p>            
+          <table class="table table-hover" id="table1">
+          <thead>
+            <tr>
+              <th>\(t_1\) (seconds)</th>
+              <th>\(t_2\) (seconds)</th>
+              <th>\(V_1\) (cm/s)</th>
+              <th>\(V_2\) (cm/s)</th>
+              <th>\(a\) (cm/s<sup>2</sup>)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>3.61</td>
+              <td>3.59</td>
+              <td>6.925</td>
+              <td>6.964</td>
+              <td>0.011</td>
+              </tr>  
+            <tr>
+              <td>3.60</td>
+              <td>3.58</td>
+              <td>6.944</td>
+              <td>6.983</td>
+              <td>0.011</td>
+            </tr>
+            <tr>
+              <td>3.68</td>
+              <td>3.61</td>
+              <td>6.793</td>
+              <td>6.925</td>
+              <td>0.037</td>
+            </tr>  
+            <tr>
+              <td>3.68</td>
+              <td>3.56</td>
+              <td>6.793</td>
+              <td>7.022</td>
+              <td>0.064</td>
+            </tr>  
+            <tr>
+              <td>3.64</td>
+              <td>3.58</td>
+              <td>6.868</td>
+              <td>6.983</td>
+              <td>0.032</td>
+            </tr>  
+            <tr>
+              <td>3.65</td>
+              <td>3.48</td>
+              <td>6.849</td>
+              <td>7.184</td>
+              <td>0.096</td>
+            </tr>  
+            <tr>
+              <td>3.62</td>
+              <td>3.63</td>
+              <td>6.906</td>
+              <td>6.887</td>
+              <td>-0.005</td>
+            </tr>  
+            <tr>
+              <td>3.68</td>
+              <td>3.60</td>
+              <td>6.793</td>
+              <td>6.944</td>
+              <td>0.042</td>
+            </tr>  
+            <tr>
+              <td>3.65</td>
+              <td>3.63</td>
+              <td>6.849</td>
+              <td>6.887</td>
+              <td>0.010</td>
+            </tr>  
+            <tr>
+              <td>3.70</td>
+              <td>3.59</td>
+              <td>6.757</td>
+              <td>6.964</td>
+              <td>0.058</td>
+            </tr>    
+          </tbody>
+        </table>
+        <p>Average Acceleration = 0.00036 m/s<sup>2</sup></p>
+        <br>
+        <p><strong>Table 2.</strong> Automated method of measurement (timer resolution of 80 milliseconds)</p>            
+        <table class="table table-hover" id="table2">
+          <thead>
+            <tr>
+              <th>\(t_1\) (seconds)</th>
+              <th>\(t_2\) (seconds)</th>
+              <th>\(V_1\) (cm/s)</th>
+              <th>\(V_2\) (cm/s)</th>
+              <th>\(a\) (cm/s<sup>2</sup>)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>3.68</td>
+              <td>3.60</td>
+              <td>6.793</td>
+              <td>6.944</td>
+              <td>0.042</td>
+            </tr>  
+            <tr>
+              <td>3.68</td>
+              <td>3.60</td>
+              <td>6.793</td>
+              <td>6.944</td>
+              <td>0.042</td>
+            </tr>
+            <tr>
+              <td>3.68</td>
+              <td>3.60</td>
+              <td>6.793</td>
+              <td>6.944</td>
+              <td>0.042</td>
+            </tr>  
+            <tr>
+              <td>3.60</td>
+              <td>3.68</td>
+              <td>6.944</td>
+              <td>6.793</td>
+              <td>-0.041</td>
+            </tr>  
+            <tr>
+              <td>3.60</td>
+              <td>3.68</td>
+              <td>6.944</td>
+              <td>6.793</td>
+              <td>-0.041</td>
+            </tr>  
+            <tr>
+              <td>3.68</td>
+              <td>3.60</td>
+              <td>6.793</td>
+              <td>6.944</td>
+              <td>0.042</td>
+            </tr>  
+            <tr>
+              <td>3.68</td>
+              <td>3.60</td>
+              <td>6.793</td>
+              <td>6.944</td>
+              <td>0.042</td>
+            </tr>  
+            <tr>
+              <td>3.68</td>
+              <td>3.60</td>
+              <td>6.793</td>
+              <td>6.944</td>
+              <td>0.042</td>
+            </tr>  
+            <tr>
+              <td>3.68</td>
+              <td>3.60</td>
+              <td>6.793</td>
+              <td>6.944</td>
+              <td>0.042</td>
+            </tr>  
+            <tr>
+              <td>3.60</td>
+              <td>3.68</td>
+              <td>6.944</td>
+              <td>6.793</td>
+              <td>-0.041</td>
+            </tr>    
+          </tbody>
+        </table>
+        <p>Average Acceleration = 0.00017 m/s<sup>2</sup></p>
+        </div>        
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header text-center d-grid">
+        <a class="btn" data-bs-toggle="collapse" href="#discussion"><h5>Discussion</h5></a>
+      </div>
+      <div id="discussion" class="collapse" data-bs-parent="#accordion">
+        <div class="card-body">
+          <p>The varying accelerations measured in both tests were due to the imperfections of the speedometer build itself, environmental 
+            factors, and human inaccuracy in measuring the values manually. Compared to the actual gravitational acceleration which is 
+            9.8m/s<sup>2</sup>, the values of acceleration measured were so minute that they can be considered negligible. In ideal conditions, 
+            both methods of measurement showed that the acceleration of the spherical magnet free-falling inside the copper pipe was non-existent 
+            since the final velocity and initial velocity were the same.</p>
+          <p>The experimental interpretation of this research paper will focus on the force interactions between electromagnetism and 
+            gravity, therefore, the weight will be referenced and not mass. If weight is the cause of free-fall acceleration, then 
+            differing values of weight will correspond to different free-fall accelerations accordingly. However, free-fall acceleration 
+            on earth without air resistance will always be constant at 9.8m/s<sup>2</sup> regardless of weight. The weight then has nothing to do 
+            with a free-fall-able body's motion towards earth through a medium. A separate constant gravitational force is necessitated 
+            for constant acceleration to take place. Using Occam's razor, it will be simpler to separate weight and gravitational force as 
+            two distinct forces acting on a free-fall-able body in the same direction but not at the same time. Weight, in this case, is 
+            then the constant induced force on a free-fall-able body due to earth's charge or potential when not in free fall while 
+            gravitational force is the constant force acting on a free-fall-able body caused by a gravitational field when in free fall 
+            through a medium.</p>
+          <p>The results indicate that the constant reflected electromotive force induced due to the magnet's acceleration to the constant
+             velocity at free fall opposes the gravitational force that keeps the same magnet from further accelerating. Since Lenz's Law 
+             states that any magnetic induction will cause a magnetic field that will oppose the one that generates it, the magnet in free 
+             fall will be subjected to an electromagnetic braking effect.</p>
+        </div>        
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header text-center d-grid">
+        <a class="btn" data-bs-toggle="collapse" href="#conclusion"><h5>Conclusion</h5></a>
+      </div>
+      <div id="conclusion" class="collapse" data-bs-parent="#accordion">
+        <div class="card-body">
+          <p>Representing the gravitational field in this manner, where weight is independent of gravitational force and is treated as a 
+            separate force,</p>
+          <p>\[\overrightarrow G = \frac{\overrightarrow F_l}{I_e}\]</p>
+          <p>where \(\overrightarrow G\) is the gravitational field, \(\overrightarrow F_l\) the opposing Lenz force, in this case, the reflected electromotive force, 
+            and \(I_e\) the induced eddy currents, and representing the apparent displacement of the magnet due to the opposing Lenz force 
+            as \(h_a\), a relationship with the existing classical Maxwell's equations can be derived by referencing the changing magnetic 
+            field \(\overrightarrow B\) with respect to time,</p>
+          <p>\[\frac{d}{dt} \displaystyle \int_{s}^{}\overrightarrow B . \overrightarrow {ds} = - \frac{d}{dt} \displaystyle \int_{h_a}^{}\overrightarrow G . \overrightarrow {dh_a}\]</p>
+          <p>where \(s\) is the inner surface area of the pipe.</p>
+          <p>The mathematical equation above represents the relationship between the magnetic field and gravitational field as abstractions 
+            for the force interactions of a free-falling magnet inside a copper pipe. The changing magnetic field, due to acceleration to 
+            constant velocity, generates eddy currents which in turn induces a constant Lenz force, in this case, the reflected electromotive 
+            force, that opposes the free-fall acceleration. The apparent displacement in the opposite direction due to Lenz force is not 
+            evident but is represented as the free-fall constant velocity which is necessitated to induce said Lenz force. At constant 
+            velocity, the system is at a balanced state where the force equilibrium between the electromotive force and gravitational force 
+            is achieved.</p>
+        </div>        
+      </div>
+    </div>
+  </div>  
+  <script src="js/bootstrap.bundle.js"></script>
+  <script src="/mathjax/tex-chtml.js" id="MathJax-script" async></script>
+</body>
+</html>
